@@ -94,7 +94,7 @@ def train_model(X, y):
     print(f"\nAccuracy: {accuracy:.4f}")
     
     if accuracy > 0.95:
-        print("⚠️  High accuracy detected - verify no data leakage")
+        print("High accuracy detected - verify no data leakage")
     
     print("\nClassification Report:")
     print(classification_report(y_test, y_pred, target_names=['<$50k', '>$50k']))
@@ -127,11 +127,11 @@ def main():
         print("="*60)
         
     except FileNotFoundError:
-        print("\n❌ Data files not found. Need:")
+        print("\nData files not found. Need:")
         print("  - census-bureau.data")
         print("  - census-bureau.columns")
     except Exception as e:
-        print(f"\n❌ Error: {e}")
+        print(f"\nError: {e}")
 
 
 if __name__ == "__main__":
