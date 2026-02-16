@@ -157,11 +157,11 @@ def main():
         print("  - segmentation_viz.png")
         
     except FileNotFoundError:
-        print("\n❌ Data files not found. Need:")
+        print("\nData files not found. Need:")
         print("  - census-bureau.data")
         print("  - census-bureau.columns")
     except Exception as e:
-        print(f"\n❌ Error: {e}")
+        print(f"\nError: {e}")
 
 
 if __name__ == "__main__":
