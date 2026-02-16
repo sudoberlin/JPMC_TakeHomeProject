@@ -1,6 +1,6 @@
 # Census Income Analysis
 
-ML project for income prediction and customer segmentation using 1994-1995 US Census data.
+Income prediction and customer segmentation using 1994-1995 US Census data.
 
 ## Requirements
 
@@ -19,8 +19,8 @@ pip install pandas numpy scikit-learn matplotlib
 
 - `classification_model.py` - Random Forest model for income prediction
 - `segmentation_model.py` - K-Means clustering for customer segmentation
-- `census-bureau.data` - Dataset (not included)
-- `census-bureau.columns` - Column names (not included)
+- `census-bureau.data` - Dataset (not included in this repo)
+- `census-bureau.columns` - Column names (not included in this repo)
 
 ## Running the Code
 
@@ -49,6 +49,8 @@ Runtime: ~2-3 minutes each
 
 ## Notes
 
-Classification accuracy should be around 85-94%. Higher accuracy may indicate data leakage.
+Classification accuracy should be around 85-94%. 
 
-Segmentation uses k=3 clusters based on elbow method. Adjust in code if needed.
+Higher accuracy may indicate data leakage.
+
+Segmentation uses k=3 clusters based on elbow method.
